@@ -15,4 +15,4 @@ Update the new _details_ div with the value of the text input
 
 ### Super Mega Bonus Credit Hyper Fighting
 
-*Change the appeafance of the paragraph (think CSS) based on a value from the form
+*Change the appearance of the paragraph (think CSS) based on a value from the form _e.g._ Turn the text blue if the user types "Blue in the form field.

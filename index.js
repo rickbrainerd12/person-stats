@@ -1,3 +1,5 @@
+const myList = new Array()
+
 function updateHeading(ev){
     ev.preventDefault()
     const f = event.target
@@ -7,5 +9,30 @@ function updateHeading(ev){
   //heading.innerHtml = name
 }
 
+function updateDiv(ev){
+ev.preventDefault()
+const f = event.target
+const name = f.personName.value
+const stats = document.querySelector('#stats')
+myList.push(name)
+stats.textContent = myList
+}
+
+function updateColor(ev){
+ev.preventDefault()
+const f = event.target
+const name = f.color.value
+const stats = document.querySelector("#stats")
+myList.push(name)
+stats.textContent = myList
+
+document.querySelector('#stats').style.color = name
+}
+
+
 const personForm = document.querySelector('#person-form')
 personForm.addEventListener('submit', updateHeading)
+personForm.addEventListener('submit', updateDiv)
+
+const secondForm = document.querySelector('#secondForm')
+secondForm.addEventListener('submit', updateColor)
