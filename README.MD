@@ -34,4 +34,4 @@ Update the new _details_ div with the value of the text input
 
 ### Super Mega Bonus Credit Hyper Fighting
 
-* Be strong! do not resor to the use of `innerHTML` Keep using `document.createElement`
+* Be strong! do not resort to the use of `innerHTML` Keep using `document.createElement`
