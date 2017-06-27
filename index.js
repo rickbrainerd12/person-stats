@@ -1,4 +1,4 @@
-const myList = new Array()
+//const myList = new Array()
 
 function updateHeading(ev){
     ev.preventDefault()
@@ -14,8 +14,9 @@ ev.preventDefault()
 const f = event.target
 const name = f.personName.value
 const stats = document.querySelector('#stats')
-myList.push(name)
-stats.textContent = myList
+//myList.push(name)
+//stats.textContent = myList
+stats.innerHTML = `<p>${name}`
 }
 
 function updateColor(ev){
@@ -23,8 +24,9 @@ ev.preventDefault()
 const f = event.target
 const name = f.color.value
 const stats = document.querySelector("#stats")
-myList.push(name)
-stats.textContent = myList
+//myList.push(name)
+//stats.textContent = myList
+stats.innerHTML = `<p>${name}`
 
 document.querySelector('#stats').style.color = name
 }
