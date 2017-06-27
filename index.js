@@ -21,6 +21,7 @@ const stats = document.querySelector('#stats')
 const p = document.createElement('p')
 p.textContent = `${name}`
 stats.appendChild(p)
+//p.setAttribut('id', name)
 }
 
 function updateColor(ev){
@@ -35,6 +36,7 @@ const stats = document.querySelector("#stats")
 const p = document.createElement('p')
 p.textContent = `${name}`
 stats.appendChild(p)
+//p.setAttribute('id', name)
 
 document.querySelector('#stats').style.color = name
 }
