@@ -29,7 +29,7 @@ const f = event.target
 const name = f.color.value
 const stats = document.querySelector("#stats")
 //myList.push(name)
-//stats.textContent = myList
+//stats.textContent = myList  
 //stats.innerHTML = `<p>${name}`
 
 const p = document.createElement('p')
