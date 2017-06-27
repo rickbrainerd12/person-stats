@@ -16,7 +16,11 @@ const name = f.personName.value
 const stats = document.querySelector('#stats')
 //myList.push(name)
 //stats.textContent = myList
-stats.innerHTML = `<p>${name}`
+//stats.innerHTML = `<p>${name}`
+
+const p = document.createElement('p')
+p.textContent = `${name}`
+stats.appendChild(p)
 }
 
 function updateColor(ev){
@@ -26,7 +30,11 @@ const name = f.color.value
 const stats = document.querySelector("#stats")
 //myList.push(name)
 //stats.textContent = myList
-stats.innerHTML = `<p>${name}`
+//stats.innerHTML = `<p>${name}`
+
+const p = document.createElement('p')
+p.textContent = `${name}`
+stats.appendChild(p)
 
 document.querySelector('#stats').style.color = name
 }
