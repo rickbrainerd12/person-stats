@@ -1,4 +1,4 @@
-//const myList = new Array()
+const ul = document.createElement('ul')
 
 function updateHeading(ev){
     ev.preventDefault()
@@ -6,39 +6,33 @@ function updateHeading(ev){
     const name = f.personName.value
   const heading = document.querySelector('h1')
   heading.textContent = name
-  //heading.innerHtml = name
 }
+
 
 function updateDiv(ev){
 ev.preventDefault()
 const f = event.target
 const name = f.personName.value
 const stats = document.querySelector('#stats')
-//myList.push(name)
-//stats.textContent = myList
-//stats.innerHTML = `<p>${name}`
-
-const p = document.createElement('p')
-p.textContent = `${name}`
-stats.appendChild(p)
-//p.setAttribut('id', name)
+const nameItem = document.createElement('li')
+nameItem.textContent = name
+ul.appendChild(nameItem)
+stats.appendChild(ul)
 }
 
 function updateColor(ev){
 ev.preventDefault()
 const f = event.target
-const name = f.color.value
+const colorName = f.color.value
 const stats = document.querySelector("#stats")
-//myList.push(name)
-//stats.textContent = myList  
-//stats.innerHTML = `<p>${name}`
-
-const p = document.createElement('p')
-p.textContent = `${name}`
-stats.appendChild(p)
-//p.setAttribute('id', name)
-
-document.querySelector('#stats').style.color = name
+const colorItem = document.createElement('li')
+/*const colorDiv = document.createElement('div')
+colordiv.style.backgroundColor = colorName
+colorDiv.style.width = '6rem'
+colorDiv.style.height = '3rem'*/
+colorItem.textContent = colorName
+ul.appendChild(colorItem)
+stats.appendChild(ul)
 }
 
 
